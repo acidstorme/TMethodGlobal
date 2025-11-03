@@ -286,17 +286,21 @@
     </div>
   </footer>
   <script>
-  window.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("sent") === "1") {
-      alert("Message sent successfully! 🎉");
+    window.addEventListener("DOMContentLoaded", () => {
+      // Combine query params from search and hash (for both cases)
+      const fullParams = window.location.search || window.location.hash;
+      const params = new URLSearchParams(fullParams.split("?")[1]);
+      
+      if (params.get("sent") === "1") {
+        alert("Message sent successfully! 🎉");
 
-      // Optional: clean URL after showing message
-      const url = new URL(window.location.href);
-      url.search = "";
-      window.history.replaceState({}, document.title, url.toString());
-    }
-  });
-</script>
+        // Optional: clean the URL after showing the message
+        const url = new URL(window.location.href);
+        url.hash = "#contact"; // keep the anchor but remove ?sent=1
+        window.history.replaceState({}, document.title, url.toString());
+      }
+    });
+  </script>
+
 </body>
 </html>
