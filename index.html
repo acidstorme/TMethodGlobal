@@ -285,5 +285,18 @@
       </div>
     </div>
   </footer>
+  <script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sent") === "1") {
+      alert("Message sent successfully! 🎉");
+
+      // Optional: clean URL after showing message
+      const url = new URL(window.location.href);
+      url.search = "";
+      window.history.replaceState({}, document.title, url.toString());
+    }
+  });
+</script>
 </body>
 </html>
