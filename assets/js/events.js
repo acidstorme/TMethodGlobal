@@ -152,7 +152,7 @@
         <a href="events.html" class="text-blue-900 hover:underline text-sm">← Back to Events</a>
         <h1 class="mt-3 text-2xl md:text-3xl font-bold">${ev.title}</h1>
         <p class="mt-1 text-gray-600">${ev.date || ''}${ev.location ? ' · ' + ev.location : ''}</p>
-        <p class="mt-4 text-gray-700">${ev.description || ev.summary || ''}</p>
+        <p class="mt-4 text-gray-700 whitespace-pre-line">${ev.description || ev.summary || ''}</p>
       </div>
       <div class="mt-8 grid gap-6 md:grid-cols-2">
         ${gallery}
