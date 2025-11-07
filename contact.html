@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - TMethod Global Private Limited</title>
+  <meta name="description" content="Contact TMethod Global Private Limited for partnerships, service inquiries, or a discovery call." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+  <header class="bg-blue-200 text-black">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html#home" class="flex items-center space-x-3 group">
+        <img src="logo.png" alt="TMethod Global logo" class="h-16 w-auto transform group-hover:scale-105 transition-transform" />
+        <span class="text-xl md:text-2xl font-bold tracking-wide brand-font">TMethod Global Private Limited</span>
+      </a>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="index.html#about" class="hover:underline">About</a>
+        <a href="index.html#services" class="hover:underline">Services</a>
+        <a href="index.html#clients" class="hover:underline">Clients</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="contact" class="py-16 bg-blue-50">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <h1 class="text-2xl md:text-3xl font-bold text-center">Contact Us</h1>
+      <p class="mt-3 text-center text-gray-700">Reach out for partnerships, service inquiries, or a discovery call.</p>
+      <div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
+        <form id="contact-form" method="POST" action="https://formsubmit.co/bf703b28417ff192f914a3114c979d2c" class="bg-white rounded-xl shadow p-6 grid gap-4">
+          <input type="hidden" name="_subject" value="New contact from TMethod Global Website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
+          <input type="text" name="name" placeholder="Your Name" class="p-3 border rounded" required />
+          <input type="email" name="email" placeholder="Your Email" class="p-3 border rounded" required />
+          <input type="text" name="company" placeholder="Company (optional)" class="p-3 border rounded" />
+          <textarea name="message" placeholder="Your Message" rows="5" class="p-3 border rounded" required></textarea>
+          <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800">Send Message</button>
+          <input type="hidden" name="_next" value="contact.html?sent=1#contact">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+        <div class="bg-white rounded-xl shadow p-6">
+          <h2 class="text-lg font-semibold">Head Office</h2>
+          <p class="mt-2">TMethod Global Private Limited<br/>IGI Airport, New Delhi, India</p>
+          <div class="mt-4">
+            <p><span class="font-medium">Email:</span> contact@tmethodglobal.com</p>
+            <p class="mt-1"><span class="font-medium">Phone:</span> +91-9868015828</p>
+          </div>
+          <div class="mt-6">
+            <iframe title="TMethod Global Private Limited Map" class="w-full h-56 rounded" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3504.5900889402183!2d77.10728397549785!3d28.552038175708844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzA3LjMiTiA3N8KwMDYnMzUuNSJF!5e0!3m2!1sen!2sin!4v1762156082965!5m2!1sen!2sin"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-200 text-black">
+    <div class="container mx-auto px-6 py-8 grid gap-6 md:grid-cols-3 items-center">
+      <div class="flex justify-center md:justify-start items-center space-x-3">
+        <img src="logo.png" alt="TMethod Global logo" class="h-16 w-auto" />
+        <span class="brand-font text-base md:text-lg font-semibold">TMethod Global Private Limited</span>
+      </div>
+      <nav class="flex justify-center space-x-6 text-sm">
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+        <a href="terms.html" class="hover:underline">Terms of Use</a>
+        <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+      </nav>
+      <div class="text-center md:text-right text-xs">
+        <p>&copy; 2025 TMethod Global Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

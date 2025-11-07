@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event - TMethod Global Private Limited</title>
+  <meta name="description" content="Event details from TMethod Global Private Limited." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+  <header class="bg-blue-200 text-black">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html#home" class="flex items-center space-x-3 group">
+        <img src="logo.png" alt="TMethod Global logo" class="h-16 w-auto transform group-hover:scale-105 transition-transform" />
+        <span class="text-xl md:text-2xl font-bold tracking-wide brand-font">TMethod Global Private Limited</span>
+      </a>
+      <nav class="hidden md:flex space-x-6 text-sm">
+        <a href="index.html#about" class="hover:underline">About</a>
+        <a href="index.html#services" class="hover:underline">Services</a>
+        <a href="index.html#clients" class="hover:underline">Clients</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-16">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div id="event-detail"></div>
+    </div>
+  </section>
+
+  <footer class="bg-blue-200 text-black">
+    <div class="container mx-auto px-6 py-8 grid gap-6 md:grid-cols-3 items-center">
+      <div class="flex justify-center md:justify-start items-center space-x-3">
+        <img src="logo.png" alt="TMethod Global logo" class="h-16 w-auto" />
+        <span class="brand-font text-base md:text-lg font-semibold">TMethod Global Private Limited</span>
+      </div>
+      <nav class="flex justify-center space-x-6 text-sm">
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+        <a href="terms.html" class="hover:underline">Terms of Use</a>
+        <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
+      </nav>
+      <div class="text-center md:text-right text-xs">
+        <p>&copy; 2025 TMethod Global Private Limited. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/events.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function(){
+      if (window.TMEvents) TMEvents.renderEventDetail('event-detail');
+    });
+  </script>
+</body>
+</html>

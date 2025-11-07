@@ -1,0 +1,12 @@
+.brand-font { font-family: 'EB Garamond', Garamond, serif; }
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.reveal-active { opacity: 1; transform: none; }
+.card-hover { transition: transform .25s ease, box-shadow .25s ease; }
+.card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+.check-list { list-style: none; padding: 0; margin: 0; }
+.check-list li { position: relative; padding-left: 1.5rem; }
+.check-list li::before { content: "\2713"; position: absolute; left: 0; top: 0; color: #1f2937; font-weight: 700; }
+.overlay-gradient { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0)); }
+.title-overlay { position: absolute; left: 1rem; bottom: 1rem; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,.35); }
+.events-collage { display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; }
+@media (max-width: 640px) { .events-collage { grid-template-columns: 1fr; } }

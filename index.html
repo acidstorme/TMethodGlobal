@@ -10,15 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/favicon.png">
-  <style>
-    .brand-font { font-family: 'EB Garamond', Garamond, serif; }
-  </style>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="bg-white text-gray-800 font-sans antialiased">
   <!-- Header -->
   <header class="bg-blue-200 text-black">
     <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#home" class="flex items-center space-x-3 group">
+      <a href="index.html#home" class="flex items-center space-x-3 group">
         <img src="logo.png" alt="TMethod Global logo" class="h-16 w-auto transform group-hover:scale-105 transition-transform" />
         <span class="text-xl md:text-2xl font-bold tracking-wide brand-font">TMethod Global Private Limited</span>
       </a>
@@ -26,7 +24,7 @@
         <a href="#about" class="hover:underline">About</a>
         <a href="#services" class="hover:underline">Services</a>
         <a href="#clients" class="hover:underline">Clients</a>
-        <a href="#contact" class="hover:underline">Contact</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
       </nav>
     </div>
   </header>
@@ -38,13 +36,13 @@
       <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto">Your trusted partner for International Aviation Consulting, HR Consulting, and Office Space Management - strategically based at <strong>IGI Airport, New Delhi</strong>.</p>
       <div class="mt-6 space-x-3">
         <a href="#services" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800">Explore Services</a>
-        <a href="#contact" class="inline-block border border-blue-900 text-blue-900 px-6 py-3 rounded-md hover:bg-blue-50">Contact Us</a>
+        <a href="contact.html" class="inline-block border border-blue-900 text-blue-900 px-6 py-3 rounded-md hover:bg-blue-50">Contact Us</a>
       </div>
     </div>
   </section>
 
   <!-- Partner highlight -->
-  <section class="bg-blue-900/95 text-white">
+  <section class="bg-blue-900/95 text-black">
     <div class="container mx-auto px-6 py-6 text-center">
       <p class="text-sm md:text-base">Proud India partner for <span class="font-semibold">Bluebox Aviation Systems Limited (UK)</span> — providing dedicated staff and serviced office space in New Delhi.</p>
     </div>
@@ -98,13 +96,13 @@
       <div class="mt-10 grid gap-6 md:grid-cols-2">
 
         <!-- International Aviation Consultant (Expanded & Prioritized) -->
-        <article id="consulting" class="bg-white rounded-xl shadow p-6">
+        <article id="consulting" class="bg-white rounded-xl shadow p-6 reveal card-hover">
           <h3 class="text-xl font-semibold">International Aviation Consultant</h3>
           <p class="mt-2">Comprehensive advisory, liaison, and operational support for international and domestic aviation stakeholders.</p>
           <div class="mt-4 grid sm:grid-cols-2 gap-4">
             <div>
               <h4 class="font-medium">Regulatory Liaison</h4>
-              <ul class="mt-2 space-y-1 list-disc list-inside text-sm">
+              <ul class="mt-2 check-list text-sm">
                 <li>Liaison with DGCA, BCAS, and Ministry of Civil Aviation</li>
                 <li>Support for Schedule, Non Schedule Operations (NSOP), and overflying permissions</li>
                 <li>Coordination with Airports Authority of India (AAI)</li>
@@ -113,7 +111,7 @@
             </div>
             <div>
               <h4 class="font-medium">Airport & Slot Management</h4>
-              <ul class="mt-2 space-y-1 list-disc list-inside text-sm">
+              <ul class="mt-2 check-list text-sm">
                 <li>Liaison with airport operators for slot management</li>
                 <li>Space allocation and utilization planning</li>
                 <li>Stakeholder negotiation and approvals</li>
@@ -121,7 +119,7 @@
             </div>
             <div>
               <h4 class="font-medium">Strategic Advisory</h4>
-              <ul class="mt-2 space-y-1 list-disc list-inside text-sm">
+              <ul class="mt-2 check-list text-sm">
                 <li>Developing and implementing strategic plans</li>
                 <li>Conducting market research and industry analysis</li>
                 <li>Financial analysis for cost reduction and profitability</li>
@@ -129,7 +127,7 @@
             </div>
             <div>
               <h4 class="font-medium">Operational Support</h4>
-              <ul class="mt-2 space-y-1 list-disc list-inside text-sm">
+              <ul class="mt-2 check-list text-sm">
                 <li>Providing skilled resources for aviation operations</li>
                 <li>Contract and agreement negotiations with partners</li>
                 <li>Comprehensive reporting and presentations</li>
@@ -137,14 +135,14 @@
             </div>
             <div>
               <h4 class="font-medium">Training & Development</h4>
-              <ul class="mt-2 space-y-1 list-disc list-inside text-sm">
+              <ul class="mt-2 check-list text-sm">
                 <li>Design and delivery of aviation training programs</li>
                 <li>Staff performance improvement and compliance workshops</li>
               </ul>
             </div>
             <div>
               <h4 class="font-medium">Cargo & Logistics</h4>
-              <ul class="mt-2 space-y-1 list-disc list-inside text-sm">
+              <ul class="mt-2 check-list text-sm">
                 <li>Cargo handling oversight</li>
                 <li>Logistics planning and solutions</li>
                 <li>End-to-end supply chain coordination</li>
@@ -154,10 +152,10 @@
         </article>
 
         <!-- HR Consultant -->
-        <article id="hr" class="bg-white rounded-xl shadow p-6">
+        <article id="hr" class="bg-white rounded-xl shadow p-6 reveal card-hover">
           <h3 class="text-xl font-semibold">HR Consultant</h3>
           <p class="mt-2">Strategic HR services to build compliant, high-performing teams for aviation and technology operations.</p>
-          <ul class="mt-4 space-y-2 list-disc list-inside">
+          <ul class="mt-4 check-list grid sm:grid-cols-2 gap-2">
             <li>Analyze client HR needs and develop tailored solutions</li>
             <li>Plan & implement strategic HR initiatives to boost performance</li>
             <li>Advise management on HR policy formulation and administration</li>
@@ -174,10 +172,10 @@
         </article>
 
         <!-- Office Space Management -->
-        <article id="space" class="bg-white rounded-xl shadow p-6">
+        <article id="space" class="bg-white rounded-xl shadow p-6 reveal card-hover">
           <h3 class="text-xl font-semibold">Office Space Management</h3>
           <p class="mt-2">Find, secure, and operate the right workspace for aviation-focused teams in and around IGI Airport.</p>
-          <ul class="mt-4 space-y-2 list-disc list-inside">
+          <ul class="mt-4 check-list grid sm:grid-cols-2 gap-2">
             <li>Identify properties as per client requirements and budget</li>
             <li>Leasing support: negotiation, term sheets, and closure</li>
             <li>Documentation: agreements, registrations, and handover</li>
@@ -188,7 +186,7 @@
 
       <!-- CTA -->
       <div class="mt-12 text-center">
-        <a href="#contact" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800">Discuss Your Requirements</a>
+        <a href="contact.html" class="inline-block bg-blue-900 text-white px-6 py-3 rounded-md hover:bg-blue-800">Discuss Your Requirements</a>
       </div>
     </div>
   </section>
@@ -220,64 +218,14 @@
         </div>  
     </div>
   </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-blue-50">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <h2 class="text-2xl md:text-3xl font-bold text-center">Contact Us</h2>
-      <p class="mt-3 text-center text-gray-700">Reach out for partnerships, service inquiries, or a discovery call.</p>
-      <div class="mt-8 grid md:grid-cols-2 gap-6 items-start">
-        <form id="contact-form" method="POST" action="https://formsubmit.co/bf703b28417ff192f914a3114c979d2c" class="bg-white rounded-xl shadow p-6 grid gap-4">
-          <input type="hidden" name="_subject" value="New contact from TMethod Global Website" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="text" name="_honey" class="hidden" tabindex="-1" autocomplete="off" />
-          <input type="text" name="name" placeholder="Your Name" class="p-3 border rounded" required />
-          <input type="email" name="email" placeholder="Your Email" class="p-3 border rounded" required />
-          <input type="text" name="company" placeholder="Company (optional)" class="p-3 border rounded" />
-          <textarea name="message" placeholder="Your Message" rows="5" class="p-3 border rounded" required></textarea>
-          <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800">Send Message</button>
-          <input type="hidden" name="_next" value="https://tmethodglobal.com/#contact?sent=1">
-          <input type="hidden" name="_captcha" value="false">
-         </form>
-        <div class="bg-white rounded-xl shadow p-6">
-          <h3 class="text-lg font-semibold">Head Office</h3>
-          <p class="mt-2">TMethod Global Private Limited<br/>IGI Airport, New Delhi, India</p>
-          <div class="mt-4">
-            <p><span class="font-medium">Email:</span> contact@tmethodglobal.com</p>
-            <p class="mt-1"><span class="font-medium">Phone:</span> +91-9868015828</p>
-          </div>
-          <div class="mt-6">
-            <iframe title="TMethod Global Private Limited Map" class="w-full h-56 rounded" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3504.5900889402183!2d77.10728397549785!3d28.552038175708844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDMzJzA3LjMiTiA3N8KwMDYnMzUuNSJF!5e0!3m2!1sen!2sin!4v1762156082965!5m2!1sen!2sin"></iframe>
-          </div>
-        </div>
-      </div>
+  
+  <section id="events" class="py-16">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div id="home-events-container" class="reveal"></div>
     </div>
   </section>
 
-  <!-- Legal Sections -->
-  <section id="privacy" class="py-16">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <h2 class="text-2xl md:text-3xl font-bold">Privacy Policy</h2>
-      <p class="mt-4 text-gray-700">We collect only the information necessary to respond to your inquiries and provide our services. We do not sell your personal data. Information may be shared with trusted partners solely to deliver requested services or comply with legal obligations. You can request access, correction, or deletion of your data by contacting us at the email provided below.</p>
-      <p class="mt-3 text-gray-700">By using this website, you consent to the collection and use of information as described here. We may update this policy from time to time. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
-    </div>
-  </section>
 
-  <section id="terms" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <h2 class="text-2xl md:text-3xl font-bold">Terms of Use</h2>
-      <p class="mt-4 text-gray-700">The content on this website is provided for general information purposes only and may change without notice. Unauthorized use of this website may give rise to a claim for damages and/or be a criminal offense. All trademarks and brands referenced are the property of their respective owners.</p>
-      <p class="mt-3 text-gray-700">By accessing this site, you agree not to misuse the site, attempt unauthorized access, or engage in activities that could harm the site or its users.</p>
-    </div>
-  </section>
-
-  <section id="disclaimer" class="py-16">
-    <div class="container mx-auto px-6 max-w-4xl">
-      <h2 class="text-2xl md:text-3xl font-bold">Disclaimer</h2>
-      <p class="mt-4 text-gray-700">All information on this site is provided in good faith; however, we make no representation or warranty of any kind regarding accuracy, adequacy, validity, reliability, availability, or completeness. Any reliance you place on such information is strictly at your own risk.</p>
-      <p class="mt-3 text-gray-700">This site may contain links to third-party websites. We do not control and are not responsible for the content or practices of these sites.</p>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="bg-blue-200 text-black">
@@ -287,29 +235,20 @@
         <span class="brand-font text-base md:text-lg font-semibold">TMethod Global Private Limited</span>
       </div>
       <nav class="flex justify-center space-x-6 text-sm">
-        <a href="#privacy" class="hover:underline">Privacy Policy</a>
-        <a href="#terms" class="hover:underline">Terms of Use</a>
-        <a href="#disclaimer" class="hover:underline">Disclaimer</a>
+        <a href="privacy.html" class="hover:underline">Privacy Policy</a>
+        <a href="terms.html" class="hover:underline">Terms of Use</a>
+        <a href="disclaimer.html" class="hover:underline">Disclaimer</a>
       </nav>
       <div class="text-center md:text-right text-xs">
         <p>&copy; 2025 TMethod Global Private Limited. All rights reserved.</p>
       </div>
     </div>
   </footer>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/events.js"></script>
   <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      // Combine query params from search and hash (for both cases)
-      const fullParams = window.location.search || window.location.hash;
-      const params = new URLSearchParams(fullParams.split("?")[1]);
-      
-      if (params.get("sent") === "1") {
-        alert("Message sent successfully! 🎉");
-
-        // Optional: clean the URL after showing the message
-        const url = new URL(window.location.href);
-        url.hash = "#contact"; // keep the anchor but remove ?sent=1
-        window.history.replaceState({}, document.title, url.toString());
-      }
+    window.addEventListener('DOMContentLoaded', function(){
+      if (window.TMEvents) TMEvents.renderHomeEvents('home-events-container');
     });
   </script>
 
