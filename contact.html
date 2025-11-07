@@ -78,5 +78,14 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var next = document.querySelector('input[name="_next"]');
+      if (next) {
+        var path = (window.location.pathname || '/').replace(/[^/]*$/, 'contact.html');
+        next.value = window.location.origin + path + '?sent=1#contact';
+      }
+    });
+  </script>
 </body>
 </html>
